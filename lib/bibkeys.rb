@@ -5,13 +5,13 @@
 
 require 'bibtex'
 
-# This class loads a BibTeX file passed to it and provides a method to 
-# list its keys, sorted or unsorted
+# This class parses a stream of BibTeX input passed to it and provides a 
+# method to list its keys, sorted or unsorted.
 class Bibkeys
 
-  # Load the BibTeX file 
-  def initialize ( filename , sort=false )
-    @bib = BibTeX.open(filename)
+  # Parses an input stream as if it were a BibTeX file
+  def initialize ( stream , sort=false )
+    @bib = BibTeX.parse( stream )
     @sort = sort
   end
 

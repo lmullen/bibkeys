@@ -19,7 +19,7 @@ options[:sort] = false
 opts = OptionParser.new do|opts|
 
   # help options
-  opts.banner = "Usage: bibkeys [-s] bibliography.bib"
+  opts.banner = "Usage: bibkeys [-s] bibliography.bib [bibliography2.bib]\n       bibkeys [-s] -\nOptions:"
   opts.on( '-h', '--help', 'Display help screen' ) do
     puts opts
     exit
@@ -33,9 +33,10 @@ opts = OptionParser.new do|opts|
 end
 opts.parse!       # strips all non-filename arguments from ARGV
 
-# If there is a filename in ARGV, list its keys
+# If values have been passed as filenames or stdin, then pass those 
+# values as an input stream to a Bibkeys class to be parsed.
 if ARGV.any?
-  Bibkeys.new( ARGV[0], options[:sort] ).list 
+  Bibkeys.new( ARGF.read , options[:sort] ).list 
 else
-  puts "Please specify which BibTeX file to use."
+  puts "Please pass a BibTeX filename or BibTeX input to stdin."
 end
