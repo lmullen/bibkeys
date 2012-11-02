@@ -1,3 +1,4 @@
 *.bib
 *.gem
 todo.txt
+Gemfile.lock

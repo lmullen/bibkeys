@@ -1,0 +1,11 @@
+bibkeys.gemspec
+bin
+bin/bibkeys
+Gemfile
+Gemfile.lock
+lib
+lib/bibkeys.rb
+license.txt
+Manifest
+Rakefile
+README.md
