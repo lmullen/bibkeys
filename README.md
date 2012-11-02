@@ -19,7 +19,7 @@ To list all the keys in a BibTeX file:
 
     bibkeys bibliography.bib
 
-To sort the list of keys;
+To sort the list of keys:
 
     bibkeys -s bibliograph.bib
 
