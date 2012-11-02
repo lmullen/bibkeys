@@ -33,9 +33,6 @@ opts = OptionParser.new do|opts|
 end
 opts.parse!       # strips all non-filename arguments from ARGV
 
-
-#TODO use ARGF to allow input from stdin
-
 # If there is a filename in ARGV, list its keys
 if ARGV.any?
   Bibkeys.new( ARGV[0], options[:sort] ).list 
