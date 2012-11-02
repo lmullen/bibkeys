@@ -10,7 +10,7 @@ require 'bibtex'
 class Bibkeys
 
   # Load the BibTeX file 
-  def initialize ( filename , sort )
+  def initialize ( filename , sort=false )
     @bib = BibTeX.open(filename)
     @sort = sort
   end
