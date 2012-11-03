@@ -22,7 +22,7 @@ To list all the keys in a BibTeX file:
 
 To sort the list of keys:
 
-    bibkeys -s bibliograph.bib
+    bibkeys -s bibliography.bib
 
 To list all the keys in multiple files:
 
@@ -35,7 +35,7 @@ from stdin:
 
 To save the keys to a file:
 
-    bibkeys bibliograph.bib > keys.txt
+    bibkeys bibliography.bib > keys.txt
 
 ## Using Bibkeys with Vim
 
