@@ -11,7 +11,8 @@ You can install bibkeys from [RubyGems][]:
     gem install bibkeys
 
 If you don't have it installed already, you'll need to install
-[bibtex-ruby][], which does most of the heavy lifting.
+[bibtex-ruby][], which does most of the heavy lifting. Using gem 
+to install bibkeys should install that dependency for you.
 
 ## Usage
 
