@@ -1,6 +1,10 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'bibkeys/version'
+
 Gem::Specification.new do |s|
   s.name          = 'bibkeys'
-  s.version       = '0.0.1'
+  s.version       = Bibkeys::VERSION
   s.date          = '2012-11-02'
   s.summary       = 'List all the keys in BibTeX file'
   s.description   = 'A Ruby utility to list all the citation keys in a BibTeX file'
