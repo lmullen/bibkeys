@@ -2,3 +2,4 @@
 *.gem
 todo.txt
 Gemfile.lock
+pkg/

@@ -4,6 +4,7 @@
 # License::       MIT License | http://lmullen.mit-license.org/
 
 require 'bibtex'
+require 'bibkeys/version'
 
 # This class parses a stream of BibTeX input passed to it and provides a 
 # method to list its keys, sorted or unsorted.

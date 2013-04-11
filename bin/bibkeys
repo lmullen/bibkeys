@@ -30,6 +30,11 @@ opts = OptionParser.new do|opts|
     options[:sort] = true
   end
 
+  opts.on('--version', 'Show version number') do
+    puts "bibkeys, version " + Bibkeys::VERSION
+    exit
+  end
+
 end
 opts.parse!       # strips all non-filename arguments from ARGV
 
