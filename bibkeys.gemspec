@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.bindir        = 'bin'
   s.executables   << 'bibkeys'
   s.license       = 'MIT'
-  s.add_runtime_dependency('bibtex-ruby', ['~>2.1.2'])
+  s.add_runtime_dependency('bibtex-ruby', ['~>2.3'])
 end

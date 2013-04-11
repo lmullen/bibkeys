@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 gem "bundler"
-gem "rake"
-gem "bibtex-ruby", "~> 2.1.2"
+gem "rake", "~> 10.0.4"
+gem "bibtex-ruby", "~> 2.3"
