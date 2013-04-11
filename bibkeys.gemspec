@@ -5,7 +5,7 @@ require 'bibkeys/version'
 Gem::Specification.new do |s|
   s.name          = 'bibkeys'
   s.version       = Bibkeys::VERSION
-  s.date          = '2012-11-02'
+  s.date          = '2013-04-11'
   s.summary       = 'List all the keys in BibTeX file'
   s.description   = 'A Ruby utility to list all the citation keys in a BibTeX file'
   s.author        = 'Lincoln A. Mullen'
