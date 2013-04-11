@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 require 'bundler'
+require "bundler/gem_tasks"
+
 begin
   Bundler.setup
 rescue Bundler::BundlerError => e
@@ -12,17 +14,13 @@ end
 require 'rake/clean'
 CLEAN.include('*.gem')
 
-desc 'Builds the gem file'
-task :build => ['manifest'] do
-  system 'gem build bibkeys.gemspec'
-end
-
+task :build => ['manifest']
 
 desc 'Updates the Manifest file'
-task :manifest => ['clean'] do
+task :manifest do
   m = File.open('Manifest', 'w')
   m.print FileList['**/*'].reject{ |f|
-    f.start_with?('coverage') || f.end_with?('.bib')
+    f.start_with?('pkg') || f.end_with?('.bib')
   }.join("\n")
   m.close
 end
