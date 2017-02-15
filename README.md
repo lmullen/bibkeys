@@ -1,3 +1,5 @@
+**This software is no longer supported.**
+
 # Bibkeys
 
 A Ruby utility to list all the citation keys in a BibTeX file
